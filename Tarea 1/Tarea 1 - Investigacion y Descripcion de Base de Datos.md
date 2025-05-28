@@ -30,10 +30,14 @@ PostgreSQL es un sistema de gestión de bases de datos (SGBD) el cual sirve medi
 
 También existiendo funciones agregadas, las cuales son distintas de las funciones que se guardan en la base de datos, estas funciones agregadas realizan cálculos o aplican procedimientos que terminan devolviendo un valor, o que incluso terminan modificando el resultado de una consulta completa.
 
+Este sistema no solo te permite estar conectado a una sola base de datos, si no que te permite el conectarte a distintas bases de datos,
+asi como definir roles a los usuarios, esto bajo la idea de que los usuarios puedan ejecutar o no alguna funcion en especifico, y dentro de este 
+apartado podria describir que en PostgreSQL es muy sencillo el hacer respaldos de las bases de datos, que esta funcion como las anteriores son
+funciones esenciales al momento de manejar o administrar una base de datos.
+
 Este sistema comenzó y aun continua siendo un proyecto de código abierto, que a pesar de los posibles problemas de seguridad que podría tener el ser de codigo abierto, se utiliza en distintas empresas o proyectos donde se manejan datos de manera masiva pues, se ha ganado una reputación muy buena y actualmente se volvio un sistema fiable para las empresas que buscan una gestión de datos segura, además de contar con soporte para los principales lenguajes de programación como Java, Python, C++, entre otros. Esto porque, por ejemplo, cuenta con librerias en R y en Python para conectarse desde estos lenguajes a bases de datos que se administren desde PostgreSQL, facilitando mas el manejo de datos y la integracion de distintos softwares. Pero lo anterior nos habla de una comunidad que esta activa, lo cual en un proyecto de código abierto es algo vital.
 
-
-Lo termine eligiendo por ser el que mas conozco y mejor manejo
+Lo termine eligiendo por ser el que mas conozco y mejor manejo.
 
 ### Fuentes de la investigacion
 
