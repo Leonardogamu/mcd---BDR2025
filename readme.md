@@ -9,5 +9,6 @@ Este repositorio se elaboro para la materia de Bases de datos relacionales, de l
 **Tareas elaboradas por el alumno Leonardo Garcia Muñoz:**
 
 - [Tarea 1](/Tarea%201/Tarea%201%20-%20Investigacion%20y%20Descripcion%20de%20Base%20de%20Datos.md)
+- [Tarea 2](/Tarea%202/Tarea%202%20-%20Modelo%20Entidad-Relacion.md)
 
  *La lista se ira actualizando conforme se realicen el resto de tareas*
