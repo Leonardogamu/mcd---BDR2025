@@ -2,7 +2,7 @@
 ## ○ Base de Datos en Modelo Entidad-Relacion
 
 Modelo de Entidad-Relacion de la Base de Datos Propuesta:
-![Diagrama Entidad-Relacion](Imagenes/DIAGRAMA%20%Entidad-Relacion%20%TAREA%20%2.PNG)
+![Diagrama Entidad-Relacion](https://github.com/Leonardogamu/mcd---BDR2025/blob/main/Imagenes/DIAGRAMA%20Entidad-Relacion%20TAREA%202.PNG?raw=true)
 **Las modificaciones realizadas a la base de datos propuesta se describen al final**
 
 ## ○ Definicion del Dominio de los atributos de la base de datos
