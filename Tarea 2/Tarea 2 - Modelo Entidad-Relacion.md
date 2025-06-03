@@ -7,6 +7,8 @@ Modelo de Entidad-Relacion de la Base de Datos Propuesta:
 
 ## ○ Definicion del Dominio de los atributos de la base de datos
 
+**Definicion del Dominio**
+
 | **Atributo**     | **Dominio**                           |
 |--------------|---------------------------------------|
 |*Fecha Reporte*   | Datetime     |
