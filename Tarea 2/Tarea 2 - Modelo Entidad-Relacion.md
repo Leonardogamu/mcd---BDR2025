@@ -12,15 +12,15 @@ Modelo de Entidad-Relacion de la Base de Datos Propuesta:
 |*Fecha Reporte*   | Datetime     |
 |*ID del Cliente*     | String         |
 |*Nacionalidad*    | String                        |
-|*Genero*        | Boolean           |
+|*Genero*        | Boolean; Masculino = 0, Femenino = 1           |
 |*Antiguedad*         | Numeric          |
 |*Ingreso Estimado*        | Float       |
 |*Creditos Activos*      | Numeric                   |
-|*Abandono*      | Boolean                |
+|*Abandono*      | Boolean; Si = 1, No = 0                |
 |*Puntaje Crediticio*      | Float                   |
 |*Tarjetas de Credito*      | Numeric                   |
 |*Saldo*      | Float                |
-|*Cliente Activo*      | Boolean                  |
+|*Cliente Activo*      | Boolean; Si = 1, No = 0                  |
 
 **Muestra o Ejemplo del Dominio:**
 
@@ -33,11 +33,11 @@ Modelo de Entidad-Relacion de la Base de Datos Propuesta:
 |*Antiguedad*         | 2          |
 |*Ingreso Estimado*        | 18932.24       |
 |*Creditos Activos*      | 2                   |
-|*Abandono*      | "0"; No Abandono                |
+|*Abandono*      | "0"; No               |
 |*Puntaje Crediticio*      | 519.2                   |
 |*Tarjetas de Credito*      | 1                   |
 |*Saldo*      | 2250.32                |
-|*Cliente Activo*      | "1"; Activo                  |
+|*Cliente Activo*      | "1"; Si                |
 
 
 ## ○ Modificaciones Realizadas a la Base de Datos Propuesta
