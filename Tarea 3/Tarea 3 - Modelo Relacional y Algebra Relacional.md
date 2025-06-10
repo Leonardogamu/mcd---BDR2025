@@ -31,9 +31,8 @@
 ```mermaid
 
 erDiagram
-    CLIENTES ||
-    CREDITOS ||--o{ CLIENTES : Consumen
-    CUENTAS DE DEBITO ||--o{ CLIENTES : Ahorran Dinero
+    CLIENTES ||--o{ CREDITOS : Consumen
+    CLIENTES ||--o{ CUENTAS_DE_DEBITO : Ahorran_Dinero
 
     CLIENTES {
         datetime Fecha_Reporte 
@@ -50,15 +49,15 @@ erDiagram
         string ID_Cliente
         float Puntaje_crediticio
         numeric Tarjetas_de_credito
-        numeric Créditos_Activos
+        numeric Creditos_Activos
     }
 
-    CUENTAS DE DEBITO {
+    CUENTAS_DE_DEBITO {
         datetime Fecha_Reporte  
         string ID_Cliente 
         float Saldo
         boolean Cliente_activo
-        numeric Créditos_Activos
+        numeric Creditos_Activos
     }
 ````
 ---
