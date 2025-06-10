@@ -32,7 +32,7 @@
 
 erDiagram
     CLIENTES ||
-    CRÉDITOS ||--o{ CLIENTES : Consumen
+    CREDITOS ||--o{ CLIENTES : Consumen
     CUENTAS DE DEBITO ||--o{ CLIENTES : Ahorran Dinero
 
     CLIENTES {
@@ -40,13 +40,13 @@ erDiagram
         string ID_Cliente 
         string Nacionalidad
         boolean Genero
-        numeric Antigüedad
+        numeric Antiguedad
         float Ingreso_Estimado
         numeric Créditos_Activos
         boolean Abandono
     }
 
-    CRÉDITOS {
+    CREDITOS {
         string ID_Cliente
         float Puntaje_crediticio
         numeric Tarjetas_de_credito
