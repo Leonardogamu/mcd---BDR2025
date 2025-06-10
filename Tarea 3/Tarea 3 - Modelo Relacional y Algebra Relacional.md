@@ -65,7 +65,7 @@ erDiagram
 
 ## ○ Operaciones del Álgebra Relacional que se podrian realizar
 
-| **Operacion**     | **Explicacion**      | **Ejemplo**    |
+| **Operacion**     | **Explicacion**      | **Expresión**    |
 |--------------|---------------------------|----------------|
 |*1. Intersección*   |                     | Creditos [Creditos_Activos > 5] ∩ Cuentas_de_Debito         |
 |*2. Diferencia*     |                     | Clientes [Abandono = 0] - Creditos  |
