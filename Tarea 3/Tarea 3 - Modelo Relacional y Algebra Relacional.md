@@ -27,6 +27,7 @@
  - Créditos_Activos
 
 ## ○ Diagrama Relacional
+Se representa el esquema del punto anterior, con el siguiente diagrama relacional:
 
 ```mermaid
 
@@ -64,9 +65,9 @@ erDiagram
 
 ## ○ Operaciones del Álgebra Relacional que se podrian realizar
 
-| **Operacion**     | **Explicacion**                           |
-|--------------|---------------------------------------|
-|*1. Intersección*   |      |
-|*2. Diferencia*     |         |
-|*3. Selección*    |                         |
-|*4. Proyección*        |           |
+| **Operacion**     | **Explicacion**      | **Ejemplo**    |
+|--------------|---------------------------|----------------|
+|*1. Intersección*   |                     | Creditos [Creditos_Activos > 5] ∩ Cuentas_de_Debito         |
+|*2. Diferencia*     |                     | Clientes [Abandono = 0] - Creditos  |
+|*3. Selección*    |                       | Creditos [Creditos_Activos > 3]           |
+|*4. Proyección*        |                  | Clientes [ID_Cliente, Nacionalidad, Abandono]   |
