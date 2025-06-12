@@ -1,6 +1,6 @@
 # Tarea 3
 ## ○ Esquema del Modelo Relacional de la Base de Datos
-
+La Base de datos se puede representar mediante el siguiente esquema del modelo relacional:
 ### • Clientes
   - Fecha_Reporte
   - **ID_Cliente (Clave Primaria/Primary Key)**
@@ -71,7 +71,14 @@ erDiagram
 
 | **Operacion**     | **Explicacion**      | **Expresión**    |
 |--------------|---------------------------|----------------|
-|*1. Intersección*   |                     | Creditos [Creditos_Activos > 5] ∩ Cuentas_de_Debito         |
-|*2. Diferencia*     |                     | Clientes [Abandono = 0] - Creditos  |
-|*3. Selección*    |                       | Creditos [Creditos_Activos > 3]           |
-|*4. Proyección*        |                  | Clientes [ID_Cliente, Nacionalidad, Abandono]   |
+|*1. Intersección*   | Se busca obtener tuplas de clientes los cuales tengan saldo en su cuenta de debito, y cuenten con 5 o mas creditos activos        | Creditos [Creditos_Activos > 4] ∩ Cuentas_de_Debito         |
+|*2. Diferencia*     | Con esta operacion se consigue obtener aquellos clientes que no han abandonado, pero no cuentan con creditos                  | Clientes [Abandono = 0] - Creditos  |
+|*3. Selección*    | Mediante esta operacion se obtendrian lso clientes con 4 o mas creditos, asi como sus respectivos ID_Credito                      | Creditos [Creditos_Activos > 3]           |
+|*4. Proyección*        | Con este operador, se obtendrian solo los ID's, la nacionalidad y el si abandono o no, sirviendonos para un analisis superficial del abandono de clientes por nacionalidad             | Clientes [ID_Cliente, Nacionalidad, Abandono]   |
+
+
+## ○ Nuevas Modificaciones a la Base de Datos Propuesta
+Con el esquema anteriormente realizado, opte por agregar una columna de ID_Creditos y ID_Cuentas a la Base de Datos, esto para mayor facilidad al momento de manipular las relaciones.
+
+
+
