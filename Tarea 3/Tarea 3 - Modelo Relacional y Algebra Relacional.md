@@ -3,7 +3,7 @@
 
 ### • Clientes
   - Fecha_Reporte
-  - **ID_Cliente (Clave Primaria)**
+  - **ID_Cliente (Clave Primaria/Primary Key)**
   - Nacionalidad
   - Genero
   - Antigüedad
@@ -13,7 +13,8 @@
 
 ### • Créditos
 
- - **ID_Cliente (Clave Primaria)**
+ - **ID_Credito (Clave Primaria/Primary Key)**
+ - **ID_Cliente (Clave Foranea/Foreign Key → Clientes.ID_Cliente)**
  - Puntaje_crediticio
  - Tarjetas_de_credito
  - Créditos_Activos
@@ -21,7 +22,8 @@
 ### • Cuentas Debito
 
  - Fecha_Reporte
- - **ID_Cliente (Clave Primaria)**
+ - **ID_Cuenta (Clave Primaria/Primary Key)**
+ - **ID_Cliente (Clave Foranea/Foreign Key → Clientes.ID_Cliente)**
  - Saldo
  - Cliente_activo
  - Créditos_Activos
@@ -47,6 +49,7 @@ erDiagram
     }
 
     CREDITOS {
+        string ID_Credito
         string ID_Cliente
         float Puntaje_crediticio
         numeric Tarjetas_de_credito
@@ -55,6 +58,7 @@ erDiagram
 
     CUENTAS_DE_DEBITO {
         datetime Fecha_Reporte  
+        string ID_Cuenta
         string ID_Cliente 
         float Saldo
         boolean Cliente_activo
