@@ -13,5 +13,6 @@ Este repositorio se elaboro para la materia de Bases de datos relacionales, de l
 - [Tarea 3](/Tarea%203/Tarea%203%20-%20Modelo%20Relacional%20y%20Algebra%20Relacional.md)
 - [Tarea 4](/Tarea%204/Tarea%204%20-%20Creacion%20de%20Base%20de%20Datos.md)
 - [Tarea 5](/Tarea%205/Tarea%205%20-%20Agregar%20Datos%20Dummy.md)
+- [Tarea 6](/Tarea%206/Tarea%206%20-%20Funciones%20de%20Agregación.md)
   
  *La lista se ira actualizando conforme se realicen el resto de tareas*
