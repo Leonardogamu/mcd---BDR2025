@@ -38,3 +38,62 @@ SET ingreso_neto_estimado = (ingreso_estimado * 0.70);
 
 ## ○ Utiliza subconsultas para responder preguntas relevantes
 
+1. Se quiere conocer el saldo de cheques de los clientes que cuentan con mas de 4 creditos activos
+
+```sql
+SELECT sum(t1.total) as saldo_total
+FROM (SELECT 
+    id_cliente,
+    sum(saldo) as total,
+    creditos_activos
+    FROM abandono_bancario.cheques_debito
+    WHERE creditos_activos > 4
+    GROUP BY id_cliente, creditos_activos) as t1;
+
+```
+
+2. Se busca conocer el promedio del ingreso_estimado de aquellos clientes que son mujeres y cuentan con mas de 3 creditos activos, por nacionalidad:
+
+```sql
+SELECT distinct nacionalidad, AVG(ingreso_estimado)
+FROM (
+	SELECT * FROM abandono_bancario.clientes_concentrado
+	WHERE creditos_activos > 3 
+	AND genero = 1
+	) as t1
+GROUP BY nacionalidad;
+
+```
+
+3. Se busca obtener el promedio del ingreso_estimado de las 5 nacionalidades que mas ingreso_estimado representan, pero ahora se busca conocer para clientes que son hombres, y tambien con mas de 3 creditos:
+
+```sql
+SELECT distinct nacionalidad, AVG(ingreso_estimado)
+FROM (
+	SELECT *
+	FROM abandono_bancario.clientes_concentrado
+	WHERE creditos_activos > 3 
+	AND genero = 1
+	GROUP BY 
+	id_cliente,
+	fecha_reporte,
+	nacionalidad,
+	genero,
+	antiguedad,
+	ingreso_estimado,
+	creditos_activos,
+	abandono,
+	ingreso_neto_estimado
+	ORDER BY ingreso_estimado desc
+	) as t1
+GROUP BY  nacionalidad
+LIMIT 5;
+```
+
+
+## ○ Reportando Hallazgos
+1. Se identifico una incidencia/inconsistencia en la informacion, la cual se arreglo
+
+2. Se agregaron dos columnas en distintas tablas, para mejorar el tratamiento de la informacion
+
+3. Se encontro que las nacionalidades en las que los clientes hombres cuentan con un mayor ingreso estimado en promedio, son Costa Rica, Indonesia, Brazil, China y North Korea
