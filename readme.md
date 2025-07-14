@@ -15,5 +15,6 @@ Este repositorio se elaboro para la materia de Bases de datos relacionales, de l
 - [Tarea 5](/Tarea%205/Tarea%205%20-%20Agregar%20Datos%20Dummy.md)
 - [Tarea 6](/Tarea%206/Tarea%206%20-%20Funciones%20de%20Agregación.md)
 - [Tarea 7](/Tarea%207/Tarea%207%20-%20Modificar%20la%20Base.md)
+- [Tarea 8](/Tarea%208/Tarea%208%20-%20Vistas%20y%20Disparadores.md)
   
  *La lista se ira actualizando conforme se realicen el resto de tareas*
