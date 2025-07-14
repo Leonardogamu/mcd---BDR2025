@@ -73,7 +73,7 @@ group by nacionalidad;
 
 ## ○ Crear almenos un disparador de inserción, actualizacion o eliminacion
 
-La idea de este trigger es que cada que un cliente presente 0 creditos activos y presente abandono en cheques, este cliente sea registrado en una tabla especifica para los casos de abandono 100% efectivo.
+La idea de este trigger de inserción es que cada que un cliente presente 0 creditos activos y presente abandono en cheques, este cliente sea registrado en una tabla especifica para los casos de abandono 100% efectivo.
 
 Los beneficios de este trigger es tener un control de aquellos clientes que si abandonaron los servicios del banco.
 
@@ -139,3 +139,8 @@ INSERT INTO abandono_bancario.clientes_concentrado VALUES (
 #verificamos que si guarde la info 
 SELECT * FROM abandono_bancario.abandono_efectivo;
 ```
+
+## ○ Consultas en Archivo SQL:
+
+El codigo que se presenta en esta tarea tambien se puede bajar en formato .SQL en el siguiente link:
+![Codigo_Tarea8](https://github.com/Leonardogamu/mcd---BDR2025/blob/main/Imagenes/ConsultasTAREA%208.sql)
