@@ -143,4 +143,4 @@ SELECT * FROM abandono_bancario.abandono_efectivo;
 ## ○ Consultas en Archivo SQL:
 
 El codigo que se presenta en esta tarea tambien se puede bajar en formato .SQL en el siguiente link:
-![Codigo_Tarea8](https://github.com/Leonardogamu/mcd---BDR2025/blob/main/Imagenes/ConsultasTAREA%208.sql)
+[Codigo_Tarea8](https://github.com/Leonardogamu/mcd---BDR2025/blob/main/Imagenes/ConsultasTAREA%208.sql)
